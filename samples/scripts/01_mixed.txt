@@ -1,0 +1,36 @@
+# 大小混合：八档各来一块，穿插释放、切分与合并
+grow 2
+alloc 64
+alloc 100
+alloc 180
+alloc 240
+alloc 300
+alloc 450
+alloc 600
+alloc 900
+
+# 交出错落的三个洞，再申请同档、跨档
+free 3
+free 5
+free 7
+alloc 150
+alloc 350
+alloc 700
+alloc 1200
+alloc 2000
+alloc 1024
+
+# 最小档位：先放掉再拿回同一个地址
+free 1
+alloc 60
+free 2
+free 4
+alloc 260
+free 6
+alloc 384
+free 9
+alloc 900
+
+# 池尾再扩一格，跨档切分
+grow 1
+alloc 1024

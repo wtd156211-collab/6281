@@ -1,0 +1,102 @@
+# 同尺寸反复周转：不能越换越碎，也不能漏空闲
+# 反复申请释放同尺寸：三块轮转，地址必须复现
+grow
+alloc 200
+alloc 200
+alloc 200
+
+# 第 1 轮：放一块拿一块，释放的地址立刻被复用
+free 1
+alloc 200
+free 2
+alloc 200
+free 3
+alloc 200
+
+# 第 2 轮：放一块拿一块，释放的地址立刻被复用
+free 4
+alloc 200
+free 5
+alloc 200
+free 6
+alloc 200
+
+# 第 3 轮：放一块拿一块，释放的地址立刻被复用
+free 7
+alloc 200
+free 8
+alloc 200
+free 9
+alloc 200
+
+# 第 4 轮：放一块拿一块，释放的地址立刻被复用
+free 10
+alloc 200
+free 11
+alloc 200
+free 12
+alloc 200
+
+# 第 5 轮：放一块拿一块，释放的地址立刻被复用
+free 13
+alloc 200
+free 14
+alloc 200
+free 15
+alloc 200
+
+# 第 6 轮：放一块拿一块，释放的地址立刻被复用
+free 16
+alloc 200
+free 17
+alloc 200
+free 18
+alloc 200
+
+# 第 7 轮：放一块拿一块，释放的地址立刻被复用
+free 19
+alloc 200
+free 20
+alloc 200
+free 21
+alloc 200
+
+# 第 8 轮：放一块拿一块，释放的地址立刻被复用
+free 22
+alloc 200
+free 23
+alloc 200
+free 24
+alloc 200
+
+# 第 9 轮：放一块拿一块，释放的地址立刻被复用
+free 25
+alloc 200
+free 26
+alloc 200
+free 27
+alloc 200
+
+# 第 10 轮：放一块拿一块，释放的地址立刻被复用
+free 28
+alloc 200
+free 29
+alloc 200
+free 30
+alloc 200
+
+# 第 11 轮：放一块拿一块，释放的地址立刻被复用
+free 31
+alloc 200
+free 32
+alloc 200
+free 33
+alloc 200
+
+# 第 12 轮：放一块拿一块，释放的地址立刻被复用
+free 34
+alloc 200
+free 35
+alloc 200
+free 36
+alloc 200

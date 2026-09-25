@@ -1,0 +1,48 @@
+# 长期只申请不释放：池子被吃满，只能靠扩池续命
+
+# 第 1 轮：扩一格，塞满四个 1024
+grow 1
+alloc 1024
+alloc 1024
+alloc 1024
+alloc 1024
+
+# 第 2 轮：扩一格，塞满四个 1024
+grow 1
+alloc 1024
+alloc 1024
+alloc 1024
+alloc 1024
+
+# 第 3 轮：扩一格，塞满四个 1024
+grow 1
+alloc 1024
+alloc 1024
+alloc 1024
+alloc 1024
+
+# 第 4 轮：扩一格，塞满四个 1024
+grow 1
+alloc 1024
+alloc 1024
+alloc 1024
+alloc 1024
+
+# 第 5 轮：扩一格，塞满四个 1024
+grow 1
+alloc 1024
+alloc 1024
+alloc 1024
+alloc 1024
+
+# 池满之后，只申请不释放的写法只能一直失败
+alloc 1024
+alloc 64
+alloc 900
+
+# 再扩两格，前面失败的三个请求重试都成功
+grow 2
+alloc 1024
+alloc 64
+alloc 900
+alloc 100
